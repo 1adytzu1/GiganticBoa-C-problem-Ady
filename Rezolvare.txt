@@ -1,0 +1,45 @@
+#include <iostream>
+
+using namespace std;
+
+int n,c,k;
+int main()
+{
+    cin >> c;
+    if(c == 1)
+    {
+        cin >> n;
+        int nr = 0;
+        int cn = n;
+        int arie = 1;
+        int numarpasiextra = cn % 16;
+        nr = cn / 16;
+        for(int i = 1;i<=nr;i++)
+        arie *= 16;
+        if(arie>1)
+        arie = arie + numarpasiextraa * arie;
+        else
+            arie = numarpasiextra * arie;
+        cout<<arie;
+    }
+    else
+        if(c == 2)
+    {
+        cin >> k;
+        int nr = 0;
+        int arie = 1;
+        for(int i = 1;arie * 16 < k;i++)
+            arie*=16,nr+=16;
+        if(arie == k)
+        {
+            cout<<nr;
+            return 0;
+        }
+        int arieinitiala = arie;
+        while(arie < k)
+            arie = arie + arieinitiala,nr++;
+        cout<<nr;
+        return 0;
+    }
+    return 0;
+}
